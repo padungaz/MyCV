@@ -1,0 +1,256 @@
+/* src/App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+.cv-container {
+  width: 210mm;           /* A4 width */
+  min-height: 297mm;      /* A4 height */
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.12);
+  display: flex;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+/* ----------------- Sidebar (trái) ----------------- */
+.sidebar {
+  width: 38%;
+  background: linear-gradient(135deg, #0d1f3f 0%, #1a3c6e 100%);
+  color: white;
+  padding: 35px 25px;
+  position: relative;
+}
+
+.avatar-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.avatar {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.name {
+  font-size: 1.65rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.position {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #ffca28;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Section titles in sidebar */
+.section-title.orange {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #ffca28;
+  margin: 28px 0 14px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-bottom: 2px solid #ffca28;
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+/* Contact */
+.contact-list p {
+  margin: 10px 0;
+  font-size: 0.98rem;
+}
+
+/* Objective & Skills */
+.objective-list,
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.objective-list li,
+.skills-list li {
+  margin: 8px 0;
+  padding-left: 22px;
+  position: relative;
+  font-size: 0.97rem;
+}
+
+.objective-list li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: #ffca28;
+}
+
+.skills-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffca28;
+}
+
+/* ----------------- Main Content (phải) ----------------- */
+.main-content {
+  width: 62%;
+  padding: 35px 30px;
+  background: white;
+}
+
+/* Section titles in main */
+.section-title.yellow {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f57f17;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title.yellow::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #f57f17;
+}
+
+.section-title .icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
+
+/* Education */
+.education p {
+  margin: 6px 0;
+  font-size: 0.98rem;
+}
+
+.school {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.period {
+  color: #555;
+  font-style: italic;
+  float: right;
+}
+
+/* Experience */
+.experience-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #a07916;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   gap: 100px;
+}
+
+.header .company {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d84315;
+}
+
+.header .period {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.experience-item .position {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.experience-item .label {
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+  color: #555;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding-left: 18px;
+}
+
+.experience-item li {
+  margin: 6px 0;
+  position: relative;
+  padding-left: 14px;
+  font-size: 0.96rem;
+}
+
+.experience-item li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #f57f17;
+  font-size: 1.4rem;
+  line-height: 0.8;
+}
+
+/* Print friendly */
+@media print {
+  body { background: white; }
+  .cv-container {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+  .sidebar {
+    background: #0d1f3f !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+/* Mobile fallback (nếu xem trên điện thoại) */
+@media (max-width: 900px) {
+  .cv-container {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+  }
+  .sidebar, .main-content {
+    width: 100%;
+  }
+  .sidebar {
+    padding: 25px 20px;
+  }
+  .main-content {
+    padding: 25px 20px;
+  }
+}
