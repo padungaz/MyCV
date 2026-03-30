@@ -60,7 +60,6 @@ body {
   font-size: 1.1rem;
   text-align: center;
   color: #ffca28;
-  margin-bottom: 30px;
   font-weight: 500;
 }
 
@@ -120,6 +119,10 @@ body {
 }
 
 /* Section titles in main */
+.section {
+  margin-bottom: 20px;
+}
+
 .section-title.yellow {
   font-size: 1.25rem;
   font-weight: bold;
@@ -146,29 +149,41 @@ body {
   font-size: 1.3rem;
 }
 
-/* Education */
-.education p {
-  margin: 6px 0;
-  font-size: 0.98rem;
+/* Đường phân cách */
+.divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 20px 0;
+  width: 100%;
 }
 
-.school {
+/* Education */
+.education-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+.education-details li {
+  color: #444;
+  font-size: 0.97rem;
+}
+
+.education-item .school {
   font-weight: bold;
   font-size: 1.05rem;
   color: #333;
 }
 
-.period {
+.education-item .period {
   color: #555;
   font-style: italic;
+  margin: 4px 0 10px 0;
   float: right;
 }
 
 /* Experience */
 .experience-item {
   margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #a07916;
 }
 
 .header {

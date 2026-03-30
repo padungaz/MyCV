@@ -1,112 +1,3 @@
-// // src/data/cvData.ts
-
-// export interface Project {
-//     title: string;
-//     details: string[];
-// }
-
-// export interface CVData {
-//     name: string;
-//     avatar: string;
-//     location: string;
-//     phone: string;
-//     email: string;
-//     linkedin: string;
-
-//     objective: string;
-
-//     education: {
-//         degree: string;
-//         school: string;
-//         period: string;
-//         thesis: string;
-//     };
-
-//     internship: {
-//         position: string;
-//         company: string;
-//         period: string;
-//         details: string[];
-//     };
-
-//     projects: Project[];
-
-//     skills: string[];
-//     certificates: string[];
-//     interests: string[];
-// }
-
-// export const cvData: CVData = {
-//     name: "PHẠM ANH DŨNG",
-//     avatar: "https://thumbs.dreamstime.com/b/software-engineer-portrait-smiling-young-vietnamese-69422682.jpg", // ← Thay bằng ảnh thật của bạn
-//     location: "Đà Nẵng, Việt Nam",
-//     phone: "0357585829",
-//     email: "padung1999@gmail.com",
-//     linkedin: "linkedin.com/in/nguyenvana",
-
-//     objective: "Kỹ sư tự động hóa, mong muốn áp dụng kiến thức về PLC, vi điều khiển và hệ thống điều khiển vào thực tế sản xuất công nghiệp. Hướng tới phát triển chuyên sâu về lập trình PLC và robot công nghiệp, đồng thời đóng góp vào tối ưu hóa quy trình và nâng cao hiệu suất tại công ty.",
-
-//     education: {
-//         degree: "Cử nhân Kỹ thuật Điều khiển & Tự động hóa / Cơ điện tử",
-//         school: "Đại học Bách Khoa – Đại học Đà Nẵng",
-//         period: "2020 – 2024",
-//         thesis: "Đồ án tốt nghiệp: Hệ thống phân loại sản phẩm bằng mã QR tích hợp PLC và dashboard web"
-//     },
-
-//     internship: {
-//         position: "Kỹ sư thực tập – Bộ phận Tự động hóa",
-//         company: "Công ty TNHH Sản xuất XYZ (Khu công nghiệp Hòa Khánh, Đà Nẵng)",
-//         period: "06/2023 – 09/2023",
-//         details: [
-//             "Hỗ trợ lập trình PLC Siemens S7-1200 cho dây chuyền đóng gói tự động",
-//             "Thiết kế và test giao diện HMI cơ bản bằng WinCC",
-//             "Tham gia bảo trì, khắc phục sự cố hệ thống điều khiển",
-//             "Học hỏi quy trình sản xuất Lean và an toàn công nghiệp"
-//         ]
-//     },
-
-//     projects: [
-//         {
-//             title: "Hệ thống phân loại sản phẩm tự động bằng mã QR (Đồ án tốt nghiệp 2024)",
-//             details: [
-//                 "Camera công nghiệp nhận diện mã QR → PLC điều khiển băng tải & phân loại",
-//                 "Dashboard web thời gian thực (Node-RED + HTML)",
-//                 "Độ chính xác >98%, tốc độ 10–20 sản phẩm/phút"
-//             ]
-//         },
-//         {
-//             title: "Hệ thống tưới cây thông minh (Dự án cá nhân 2023)",
-//             details: [
-//                 "ESP32 + cảm biến độ ẩm + relay bơm nước tự động",
-//                 "Gửi cảnh báo qua WiFi khi độ ẩm thấp"
-//             ]
-//         }
-//     ],
-
-//     skills: [
-//         "Lập trình PLC Siemens TIA Portal (S7-1200/1500)",
-//         "Ladder, FBD, SCL cơ bản",
-//         "Vi điều khiển: Arduino, ESP32/ESP8266",
-//         "Giao tiếp Modbus, WiFi, IoT",
-//         "HMI/SCADA: WinCC Basic/Comfort",
-//         "AutoCAD Electrical, RobotStudio",
-//         "Thiết kế mạch điện – điện tử",
-//         "Làm việc nhóm & giải quyết vấn đề"
-//     ],
-
-//     certificates: [
-//         "Khóa học PLC Siemens TIA Portal (cơ bản – trung cấp)",
-//         "TOEIC 650 (hoặc tương đương)",
-//         "Chứng chỉ Arduino / IoT cơ bản"
-//     ],
-
-//     interests: [
-//         "Nghiên cứu tự động hóa 4.0 & IoT công nghiệp",
-//         "Lập trình cá nhân & dự án DIY",
-//         "Đọc sách kỹ thuật, học tiếng Anh chuyên ngành"
-//     ]
-// };
-
 export interface Experience {
     company: string;
     period: string;
@@ -133,19 +24,44 @@ export const cvData = {
         "Nâng cao kỹ năng về IoT và xử lý ảnh trong sản xuất",
     ],
 
-    education: {
-        school: "CAO ĐẲNG FPT POLYTECHNIC",
-        period: "08/2024 - Hiện tại",
-        faculty: " Kỹ thuật - Công nghệ",
-        major: " Kỹ thuật Điều khiển & Tự động hóa / Cơ điện tử",
-        rank: "Giỏi",
-        degree: "",
-    },
+    educations: [
+        {
+            school: "ĐẠI HỌC BÁCH KHOA ĐÀ NẴNG",
+            period: "2018 - 2021",
+            faculty: "Kỹ thuật",
+            major: "Kỹ thuật Nhiệt - Điện",
+            details: ["Đã nghỉ học năm 2021"]   // mảng details
+        },
+        {
+            school: "CAO ĐẲNG FPT POLYTECHNIC",
+            period: "08/2024 - Hiện tại",
+            faculty: "Kỹ thuật - Công nghệ",
+            major: "Kỹ thuật Điều khiển & Tự động hóa",
+            details: [
+                "Xếp loại: Giỏi",
+                "GPA: 3.64"
+            ]
+        },
+    ],
+
+    // src/data/cvData.ts
 
     experiences: [
         {
+            company: "Cuộc thi Arduino day - Giải nhất",
+            period: "2026",
+            position: "Trưởng nhóm - Automation Developer",
+            description: [
+                "Thiết kế và lập trình hệ thống giám sát sức khỏe thời gian thực sử dụng ESP32",
+                "Kết nối các cảm biến: nhịp tim (MAX30102), SpO2, nhiệt độ cơ thể (DS18B20), và gia tốc kế",
+                "Hiển thị dữ liệu lên OLED và gửi dữ liệu lên web dashboard qua WiFi",
+                "Xây dựng giao diện theo dõi sức khỏe (ReactJS + Node-RED)",
+                "Cảnh báo khi các chỉ số vượt ngưỡng (buzzer + thông báo web)",
+            ],
+        },
+        {
             company: "Dự án nhóm - Phân loại sản phẩm bằng mã QR",
-            period: "2024",
+            period: "2025",
             position: "Trưởng nhóm - Automation Developer",
             description: [
                 "Thiết kế hệ thống phân loại sản phẩm sử dụng camera nhận diện mã QR",
@@ -175,7 +91,6 @@ export const cvData = {
             ],
         },
     ],
-
     skills: [
         "PLC: Siemens (S7-1200, TIA Portal), Mitsubishi (FX, GX Works)",
         "Lập trình PLC: Ladder, FBD (cơ bản), hiểu cấu trúc điều khiển",
@@ -184,6 +99,7 @@ export const cvData = {
         "Xử lý ảnh: OpenCV, Python",
         "Giao tiếp công nghiệp: Modbus, MQTT, WiFi",
         "Đọc hiểu sơ đồ điện và thiết kế hệ thống cơ bản",
+        "Kỹ năng tin học văn phòng (Word, Excel, PowerPoint)",
         "Kỹ năng làm việc nhóm và giải quyết vấn đề",
     ],
 };
