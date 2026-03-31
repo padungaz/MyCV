@@ -49,19 +49,19 @@ export const cvData = {
     experiences: [
         {
             company: "Cuộc thi Arduino day - Giải nhất",
-            period: "2026",
+            period: "03/2026",
             position: "Trưởng nhóm - Automation Developer",
             description: [
                 "Thiết kế và lập trình hệ thống giám sát sức khỏe thời gian thực sử dụng ESP32",
                 "Kết nối các cảm biến: nhịp tim (MAX30102), SpO2, nhiệt độ cơ thể (DS18B20), và gia tốc kế",
                 "Hiển thị dữ liệu lên OLED và gửi dữ liệu lên web dashboard qua WiFi",
-                "Xây dựng giao diện theo dõi sức khỏe (ReactJS + Node-RED)",
+                "Xây dựng giao diện theo dõi sức khỏe (React native)",
                 "Cảnh báo khi các chỉ số vượt ngưỡng (buzzer + thông báo web)",
             ],
         },
         {
             company: "Dự án nhóm - Phân loại sản phẩm bằng mã QR",
-            period: "2025",
+            period: "10/2025",
             position: "Trưởng nhóm - Automation Developer",
             description: [
                 "Thiết kế hệ thống phân loại sản phẩm sử dụng camera nhận diện mã QR",
@@ -72,22 +72,38 @@ export const cvData = {
             ],
         },
         {
-            company: "Dự án IoT - Smart Irrigation",
-            period: "2025",
-            position: "Trưởng nhóm - Automation Developer",
+            company: "Tekup: Beunicorn",
+            period: "02/2023",
+            position: "Frontend Developer",
             description: [
-                "Thiết kế hệ thống tưới cây tự động dùng ESP32",
-                "Đọc cảm biến độ ẩm và điều khiển relay",
-                "Gửi dữ liệu lên web qua WiFi",
+                "Xây dựng hệ thống học trực tuyến hỗ trợ dạy và học từ xa",
+                "Phát triển tính năng lớp học ảo: chia sẻ màn hình, thảo luận, gửi tài liệu",
+                "Hỗ trợ ghi hình bài giảng và xem lại video",
+                "Xây dựng chức năng upload tài liệu và hệ thống kiểm tra đánh giá (quiz, assignment)",
+                "Tối ưu UI/UX và responsive với Next.js + React"
             ],
         },
         {
-            company: "Dự án xử lý ảnh",
-            period: "2023",
-            position: "Developer",
+            company: "Tekup: ExamHub Platform",
+            period: "06/2023",
+            position: "Frontend Developer",
             description: [
-                "Xử lý ảnh bằng OpenCV (lọc nhiễu, phát hiện biên)",
-                "Nhận diện đối tượng cơ bản",
+                "Xây dựng nền tảng bán khóa học và tài liệu luyện thi quốc tế",
+                "Phát triển giao diện mua bán, tìm kiếm và thanh toán mượt mà",
+                "Tích hợp đa ngôn ngữ (i18n)",
+                "Tối ưu hiệu năng và cấu trúc code cho dự án lớn",
+                "Xây dựng component tái sử dụng với Next.js, React & TypeScript"
+            ],
+        },
+        {
+            company: "UCTalent (Startup): UCTalent",
+            period: "12/2023",
+            position: "Frontend Developer",
+            description: [
+                "Xây dựng nền tảng tuyển dụng Web3 sử dụng blockchain",
+                "Tích hợp xác thực người dùng và xử lý giao dịch tiền điện tử",
+                "Kết nối giao diện với smart contract",
+                "Đảm bảo trải nghiệm người dùng mượt mà trên nhiều thiết bị"
             ],
         },
     ],
